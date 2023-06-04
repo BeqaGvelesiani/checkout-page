@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <h1 class="name_of_page">checkout</h1>
+      <div class="main">
+        <!-- ------------checkout_side-------------------- -->
+        <div class="checkout_side">
+          <div class="contact_info">
+            <h2 class="section_name">contact information</h2>
+            <div class="input_and_name_container">
+              <h5 class="input_name">E-mail</h5>
+              <div class="input_container">
+                <h1 class="icon">
+                  <span class="material-symbols-outlined"> mail </span>
+                </h1>
+                <input
+                  class="Input"
+                  type="text"
+                  placeholder="Enter your email..."
+                />
+              </div>
+            </div>
+            <div class="input_and_name_container">
+              <h5 class="input_name">Phone</h5>
+              <div class="input_container">
+                <h1 class="icon">
+                  <span class="material-symbols-outlined"> call </span>
+                </h1>
+                <input
+                  class="Input"
+                  type="text"
+                  placeholder="Enter your phone..."
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="contact_info second_name_of_section">
+            <h2 class="section_name">Shipping address</h2>
+            <div class="input_and_name_container">
+              <h5 class="input_name">Full name</h5>
+              <div class="input_container">
+                <h1 class="icon">
+                  <span class="material-symbols-outlined">
+                    account_circle
+                  </span>
+                </h1>
+                <input
+                  class="Input"
+                  type="text"
+                  placeholder="Enter your name..."
+                />
+              </div>
+            </div>
+            <div class="input_and_name_container">
+              <h5 class="input_name">Address</h5>
+              <div class="input_container">
+                <h1 class="icon">
+                  <span class="material-symbols-outlined"> home </span>
+                </h1>
+                <input
+                  class="Input"
+                  type="text"
+                  placeholder="Your address..."
+                />
+              </div>
+            </div>
+            <div class="input_and_name_container">
+              <h5 class="input_name">City</h5>
+              <div class="input_container">
+                <h1 class="icon">
+                  <span class="material-symbols-outlined"> apartment </span>
+                </h1>
+                <input class="Input" type="text" placeholder="Your city..." />
+              </div>
+            </div>
+            <!-- - -->
+            <div class="small_section">
+              <div class="input_and_name_container">
+                <h5 class="input_name">Country</h5>
+                <div class="input_container">
+                  <h1 class="icon">
+                    <span class="material-symbols-outlined"> public </span>
+                  </h1>
+                  <input
+                    class="Input"
+                    type="text"
+                    placeholder="Your country.."
+                  />
+                </div>
+              </div>
+
+              <div class="input_and_name_container">
+                <h5 class="input_name">Postal code</h5>
+                <div class="input_container">
+                  <h1 class="icon">
+                    <span class="material-symbols-outlined">
+                      markunread_mailbox
+                    </span>
+                  </h1>
+                  <input
+                    class="Input"
+                    type="text"
+                    placeholder="Postal code.."
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- - -->
+
+            <div class="checkbox_point">
+              <input class="check_box" type="checkbox" />
+              <h4 class="check_box_text">
+                save this information for next time
+              </h4>
+            </div>
+          </div>
+          <button class="Continue_BTN">continue</button>
+        </div>
+        <!-- -------------product_section----------------------- -->
+        <div class="product_section">
+          <!-- - -->
+          <div class="product_card">
+            <img src="img/photo1.png" />
+            <div class="name_price_and_selector">
+              <div class="pricing">
+                <h3 class="name_0f_product">Vintage Backbag</h3>
+                <div>
+                  <h3 class="price_of_product">$54.99</h3>
+                  <h3 class="old_price">$94.99</h3>
+                </div>
+              </div>
+              <div class="quantity_container">
+                <button class="quantity_selector" id="Q_minus">
+                  <span class="btn_name">-</span>
+                </button>
+                <h1 class="quantity_counter" id="Q_Counter">1</h1>
+                <button class="quantity_selector" id="Q_plus">
+                  <span class="btn_name">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- - -->
+          <div class="product_card">
+            <img src="img/photo2.png" />
+            <div class="name_price_and_selector">
+              <div class="pricing">
+                <h3 class="name_0f_product">Levi Shoes</h3>
+                <div>
+                  <h3 class="price_of_product">$74.99</h3>
+                  <h3 class="old_price">$124.99</h3>
+                </div>
+              </div>
+              <div class="quantity_container">
+                <button class="quantity_selector" id="Q_minus1">
+                  <span class="btn_name">-</span>
+                </button>
+                <h1 class="quantity_counter" id="Q_Counter1">1</h1>
+                <button class="quantity_selector" id="Q_plus1">
+                  <span class="btn_name">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- - -->
+          <div class="sum">
+            <div class="shipping sum_price">
+              <h1>Shipping</h1>
+              <h2>$<span id="sh">0</span></h2>
+            </div>
+            <div class="total sum_price">
+              <h1>Total</h1>
+              <h2>$<span id="t">0</span></h2>
+            </div>
+          </div>
+          <!-- - -->
+        </div>
+        <!-- --------------------------------------------------- -->
+      </div>
+    </div>
+    <footer>
+      created by <span class="underline username">BeqaGvelesiani</span> -
+      devChallenges.io
+    </footer>
+  </body>
+</html>
