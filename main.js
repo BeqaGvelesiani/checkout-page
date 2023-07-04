@@ -6,6 +6,14 @@ minus1 = document.getElementById("Q_minus1");
 plus1 = document.getElementById("Q_plus1");
 counter1 = document.getElementById("Q_Counter1");
 
+const email = document.getElementById("email");
+const phone = document.getElementById("phone");
+const userName = document.getElementById("name");
+const address = document.getElementById("address");
+const city = document.getElementById("city");
+const country = document.getElementById("country");
+const zipcode = document.getElementById("zipcode");
+
 let x = 1;
 let y = 1;
 
@@ -65,3 +73,35 @@ plus1.addEventListener("click", function () {
 });
 
 //-------------
+
+// document.getElementById("continue_btn").addEventListener("click", () => {
+//   console.log(`email value: ${Boolean(email.value)}\n
+//   phone value: ${Boolean(phone.value)}\n
+//   name value: ${Boolean(name.value)}\n
+//   address value: ${Boolean(address.value)}\n
+//   city value: ${Boolean(city.value)}\n
+//   country value: ${Boolean(country.value)}\n
+//   zipcode value: ${Boolean(zipcode.value)}`);
+// });
+
+document.getElementById("continue_btn").addEventListener("click", () => {
+  check_input(email);
+  check_input(phone);
+  check_input(userName);
+  check_input(address);
+  check_input(city);
+  check_input(country);
+  check_input(zipcode);
+});
+
+function check_input(a) {
+  if (a.value) {
+    a.style.backgroundColor = "white";
+  } else {
+    a.style.backgroundColor = "rgba(255, 0, 0, 0.378)";
+  }
+}
+
+
+
+// input backgroundColor= "rgba(255, 0, 0, 0.378)";

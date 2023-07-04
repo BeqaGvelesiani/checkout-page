@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="mobileVersion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,6 +39,7 @@
                 <input
                   class="Input"
                   type="text"
+                  id="email"
                   placeholder="Enter your email..."
                 />
               </div>
@@ -51,6 +53,7 @@
                 <input
                   class="Input"
                   type="text"
+                  id="phone"
                   placeholder="Enter your phone..."
                 />
               </div>
@@ -70,6 +73,7 @@
                 <input
                   class="Input"
                   type="text"
+                  id="name"
                   placeholder="Enter your name..."
                 />
               </div>
@@ -83,6 +87,7 @@
                 <input
                   class="Input"
                   type="text"
+                  id="address"
                   placeholder="Your address..."
                 />
               </div>
@@ -93,7 +98,12 @@
                 <h1 class="icon">
                   <span class="material-symbols-outlined"> apartment </span>
                 </h1>
-                <input class="Input" type="text" placeholder="Your city..." />
+                <input
+                  class="Input"
+                  type="text"
+                  id="city"
+                  placeholder="Your city..."
+                />
               </div>
             </div>
             <!-- - -->
@@ -107,6 +117,7 @@
                   <input
                     class="Input"
                     type="text"
+                    id="country"
                     placeholder="Your country.."
                   />
                 </div>
@@ -123,6 +134,7 @@
                   <input
                     class="Input"
                     type="text"
+                    id="zipcode"
                     placeholder="Postal code.."
                   />
                 </div>
@@ -137,7 +149,7 @@
               </h4>
             </div>
           </div>
-          <button class="Continue_BTN">continue</button>
+          <button class="Continue_BTN" id="continue_btn">continue</button>
         </div>
         <!-- -------------product_section----------------------- -->
         <div class="product_section">
